@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:news_app/views/dummy.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -36,6 +37,17 @@ class _HomePageState extends State<HomePage> {
                 Tab(icon: Icon(Icons.android_rounded), text: "Technology"),
               ],
             ),
+          ),
+          body: TabBarView(
+            children: [
+              Dummy(),
+              Dummy(),
+              Dummy(),
+              Dummy(),
+              Dummy(),
+              Dummy(),
+              Dummy(),
+            ],
           ),
         ),
       ),
