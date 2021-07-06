@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:news_app/views/Categoryview.dart';
 import 'package:news_app/views/dummy.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,13 +41,13 @@ class _HomePageState extends State<HomePage> {
           ),
           body: TabBarView(
             children: [
-              Dummy(),
-              Dummy(),
-              Dummy(),
-              Dummy(),
-              Dummy(),
-              Dummy(),
-              Dummy(),
+              CategoryView("Business"),
+              CategoryView("Entertainment"),
+              CategoryView("General"),
+              CategoryView("Health"),
+              CategoryView("Science"),
+              CategoryView("Sports"),
+              CategoryView("Technology"),
             ],
           ),
         ),
