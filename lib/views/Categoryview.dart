@@ -49,11 +49,11 @@ class _CategoryViewState extends State<CategoryView> {
                         shrinkWrap: true,
                         itemBuilder: (context, index) {
                           return NewsBox(
-                            newlist[index].urlToImage ?? "",
-                            newlist[index].title ?? "",
-                            newlist[index].description ?? "",
-                            newlist[index].articleUrl ?? "",
-                          );
+                              newlist[index].urlToImage ?? "",
+                              newlist[index].title ?? "",
+                              newlist[index].description ?? "",
+                              newlist[index].articleUrl ?? "",
+                              newlist[index].content ?? "");
                         },
                       ),
                     ),
